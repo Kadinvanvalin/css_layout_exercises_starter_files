@@ -1,4 +1,4 @@
-main{padding:33px;}
+
 .nav_img{
 	border-radius: 50%;
 	border:1px solid black;
@@ -10,7 +10,9 @@ main{padding:33px;}
 ul{list-style: ;
 }
 li{display: inline-block;
-}
+position: relative;
+left:300px;}
+li::after{ content: "|" }
 
 nav {
   padding-top: 10px;
@@ -23,10 +25,47 @@ nav {
   
   background-color: grey;
 }
-.box{
-  border: 10px green dotted;
-  height:300px;
-  width: 600px;
-  position: relative;
-  margin:auto;
+body {
+  background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
+}
+/*I cheated for this one,
+I had spend way more than an hour at this point
+and had the image link in the html instead of the css*/
+
+
+.container{
+  
+  font-size: 0;
+  height: 300px;
+  width:600px;
+  border:10px green dotted;
+  /*position: absolute;
+  display:block;*/
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:100px;}
+
+.cat{
+left: -75px;
+top:-75px;
+  
+}
+
+
+
+
+
+
+.dog{
+left:500px;
+top:20px;
+  }
+
+.pet{
+    position:relative;
+  /*display: inline-block;*/
+  
+  height:200px;
+  width:200px;
 }
